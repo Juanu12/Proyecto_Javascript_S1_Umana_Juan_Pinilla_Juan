@@ -1,9 +1,16 @@
+@font-face {
+    font-family: "Letters1";
+    src: url(../Fonts/Formula1-Black.ttf);
+}
+
+
 body {
     padding: 0;
     padding: 0;
     background-color: black;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow: hidden;
 }
 
 .Logo_Container{
@@ -14,14 +21,70 @@ overflow: hidden;
 }
 
 #Logo_Container-img{
-    margin: 20vw 0vw 0vw 25vw;
+    margin: 20vw 0vw 0vw 50vw;
     height: 10vw;
     width: 50vw;
     position: fixed;
     overflow: hidden;
+    animation: Logo 1s ease-out forwards;
+
 }
 
+h2{
+    position: absolute;
+   font-size: 4vw;
+    color: white;
+    margin: 33vw 0vw 0vw 20vw;
+    font-family: "Letters1";
+    animation: letters 1s ease-out backwards;
+}
 @keyframes Logo {
+    0% {
+        rotate: 90deg;
+        opacity: 0;
+    }
+    30% {
+        rotate: 180deg;
+        opacity: 0;
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(2);
+        rotate: 360deg;
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        rotate: 360deg;
+        opacity: 1;
+    }
+}
+
+@keyframes letters {
+    0% {
+      transform: translate(25% 25%) scale(0.5);
+      opacity: 0;
+    }
+
+    50% {
+        transform: translate(30%, 30%) scale(0.7);
+        opacity: 0;
+    }
+    70% {
+        transform: translate(45%, 45%) scale(1.2);
+        opacity: 0;
+    }
+
+    85% {
+        transform: translate(45%, 45%) scale(1.4);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(70%, 70%) scale(1.7);
+
+        opacity: 1;
+    }
 
     
 }
