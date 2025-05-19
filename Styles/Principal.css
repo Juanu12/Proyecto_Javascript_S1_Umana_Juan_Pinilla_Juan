@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+.Principal-Container_Upperpart_Logo{
+    position: fixed;
+    height: 10%;
+    width: 12%;
+}
+
+.Principal-Container_Upperpart_Logo img{
+    position: fixed;
+height: 10%;
+width: 12%;
+padding: 10px;
+margin-left: 20px;
+margin-top: -20px;
+
+}
+
+.Principal-Container_Upperpart_Chart{
+    position: fixed;
+background-color: #212529;
+width: 100%;
+height: 10%;
+margin-top: 0.3px;
+z-index: -1;
+}
+.Principal-Container_Upperpart_text1{
+
+}
+
+.Principal-Container_Upperpart_text2{
+
+}
+
+.Principal-Container_Upperpart_text3{
+
+}
+.Principal-Container_Upperpart_text4{
+
+}
+.Principal-Container_Upperpart_text5{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mediaquerry */

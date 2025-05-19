@@ -34,7 +34,7 @@ h2{
     position: absolute;
    font-size: 4vw;
     color: white;
-    margin: 33vw 0vw 0vw 20vw;
+    margin: 33vw 0vw 0vw 30vw;
     font-family: "Letters1";
     animation: letters 1s ease-out backwards;
 }
