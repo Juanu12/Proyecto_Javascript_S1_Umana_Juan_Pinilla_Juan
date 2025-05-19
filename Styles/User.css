@@ -1,4 +1,4 @@
-*{
+body{
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -6,10 +6,10 @@
 
 
 .video-grid {
-      width: 110%;
+      width: 120%;
       height: 105%;
       position: absolute;
-      margin: -0.5vw 0vw 0vw -5vw;
+      margin: -0.5vw 0vw 0vw -1vw;
 
   }
   

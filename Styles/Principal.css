@@ -31,7 +31,7 @@ margin-top: 0.3px;
 z-index: -1;
 }
 .Principal-Container_Upperpart_text1{
-margin-left: 270px;
+margin-left:400px;
 }
 
 
@@ -40,14 +40,138 @@ margin-left: 270px;
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 85px;
-    font-size: 30px;
+    gap: 155px;
+    font-size: 40px;
     margin-top: -12px;
 
 }
 p {
     color: white;
 }
+.Principal-Container_newstext{
+  position: fixed;
+  margin-top: 120px;
+  font-size: 40px;
+  margin-left: 100px;
+  padding: 0;
+}
+
+
+.Principal-Container_newschart1{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  gap: 30px;
+
+}
+
+#newschart1_border{
+  position: fixed;
+ width: 496px;
+  border: 1px solid red;
+  height: 560px;
+  margin-top: 297px;
+  margin-left: 97.1px;
+  border-radius: 35px;
+
+}
+
+.Principal-Container_newschart1 img{
+width: 30%;
+margin-top: 310px;
+margin-left: 12px;
+}
+
+.Principal-Container_newschart1 p{
+  width: 30%;
+  margin-left: 10px;
+font-size: 15px;
+height: 30px;
+
+  }
+
+  .Principal-Container_newschart2 img{
+    width: 37%;
+    margin-top: 310px;
+    margin-left: 18px;
+
+    }
+    
+    .Principal-Container_newschart2 p{
+      width: 37%;
+      margin-left: 30px;
+    font-size: 15px;
+    height: 30px;
+    
+      }
+      .Principal-Container_newschart2{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin-left: 700px;
+        gap: 30px;
+      }
+
+#newschart2_border{
+        position: fixed;
+       width: 496px;
+        border: 1px solid red;
+        height: 560px;
+        margin-top: 297px;
+        margin-left: 693px;
+        border-radius: 35px;
+      
+      }
+      #newschart3_border{
+        position: fixed;
+       width: 496px;
+        border: 1px solid red;
+        height: 560px;
+        margin-top: 297px;
+        margin-left: 1350px;
+        border-radius: 35px;
+      
+      }
+
+
+      .Principal-Container_newschart3 img{
+        width: 87%;
+        margin-top: 310px;
+        margin-left: -30px;
+      
+    
+        }
+        
+        .Principal-Container_newschart3 p{
+          width: 80%;
+          margin-left: -20px;
+        font-size: 15px;
+        height: 50px;
+        margin-top: 10px;
+        
+          }
+          .Principal-Container_newschart3{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            margin-left: 1400px;
+            gap: 30px;
+          }
+
+  a{
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 

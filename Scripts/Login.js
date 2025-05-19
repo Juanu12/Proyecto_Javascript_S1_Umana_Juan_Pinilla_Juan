@@ -30,7 +30,7 @@ async function Checkingdata(){
 
     alert ( "Email o contraseña incorrectos")
    }
-  
+
 });
       
 }

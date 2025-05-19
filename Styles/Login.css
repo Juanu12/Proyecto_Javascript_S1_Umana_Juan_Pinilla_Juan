@@ -10,7 +10,9 @@
   font-family: "Loguin1";
 }
 
-
+.cars{
+  position: absolute;
+}
 
 body {
   display: flex;
