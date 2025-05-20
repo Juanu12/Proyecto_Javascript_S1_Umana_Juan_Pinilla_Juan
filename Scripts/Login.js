@@ -24,7 +24,7 @@ async function Checkingdata(){
 
   if ( email === infoemail  && password === infopass )
     {
-      window.location.href = "./Principalpage.html"
+      window.location.href = "../adminHtml/Principalpageadmin.html"
     
    } else {
 
