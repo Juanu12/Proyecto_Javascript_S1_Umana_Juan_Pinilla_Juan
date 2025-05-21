@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 body {
@@ -13,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Barra de navegación superior */
 .Principal-Container {
   position: fixed;
   top: 0;
@@ -25,7 +24,7 @@ body {
   position: fixed;
   height: 10%;
   width: 12%;
-  z-index: 101;
+  z-index: 100;
 }
 
 .Principal-Container_Upperpart_Logo img {
@@ -33,7 +32,7 @@ body {
   width: 100%;
   padding: 10px;
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: -10px;
 }
 
 .Principal-Container_Upperpart_Chart {
@@ -59,7 +58,7 @@ body {
 .Principal-Container_Upperpart_text2,
 .Principal-Container_Upperpart_text3,
 .Principal-Container_Upperpart_text4 {
-  font-size: 18px;
+  font-size: 40px;
 }
 
 a {
@@ -72,7 +71,6 @@ p {
   color: white;
 }
 
-/* Título principal */
 .Containertext {
   width: 100%;
   display: flex;
@@ -84,28 +82,26 @@ p {
 }
 
 .Containertext h2 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
 .Redline {
   width: 260px;
-  height: 5px;
+  height: 8px;
   background-color: red;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
-/* Sección de tarjetas */
 .Teamssection {
-  margin-top: 5vh;
+  margin-top: 7vh;
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 50px;
   padding: 0 20px;
 }
 
@@ -113,38 +109,46 @@ p {
 .Teamssection_Registrarequipos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 350px;
-  border: 1px solid #444;
-  border-radius: 10px;
+  width: 600px;
+  border: 1px solid red;
+  border-radius: 30px;
   overflow: hidden;
   background-color: #121212;
 }
 
 .Teamssection_Verequipos--Title,
 .Teamssection_Registrarequipos--Title2 {
-  font-size: 22px;
+  font-size: 24px;
   background-color: #212529;
   width: 100%;
-  padding: 15px;
-  text-align: center;
+  padding: 15px 20px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  margin: 0;
+}
+
+.Teamssection_Verequipos--Title p,
+.Teamssection_Registrarequipos--Title2 p {
+  margin: 0;
+  font-weight: bold;
 }
 
 .Teamssection_Verequipos--Title_Down-text,
 .Teamssection_Registrarequipos--Title2_Down-text {
   font-size: 16px;
-  padding: 15px;
+  padding: 15px 20px;
   text-align: center;
 }
 
 .Teamssection_Verequipos_btn,
 .Teamssection_Registrarequipos_btn {
-  margin: 15px 0 20px 0;
+  margin: 10px auto 20px auto;
+  text-align: center;
 }
 
 .Teamssection_Verequipos_btn a,
 .Teamssection_Registrarequipos_btn a {
+  display: inline-block;
   padding: 10px 20px;
   background-color: #FF0000;
   color: white;
@@ -153,9 +157,10 @@ p {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  width: 180px;
+  text-align: center;
 }
 
-/* Formulario de registro */
 .Data {
   width: 100%;
   padding: 0 20px;
@@ -173,17 +178,24 @@ p {
 }
 
 .Downchart {
-  background-color: #212529;
+  background-color: #1A1A1B;
   border-radius: 10px;
   padding: 30px;
   border: 1px solid #444;
 }
-
+.Registroequipos{
+  background-color: #2A2A2A;
+  height: 3vw;
+  border-radius: 30px;
+}
+.Registroequipos h2{
+padding-top: 15px;
+padding-left: 20px;
+}
 .Inputs {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 100px;
   justify-content: space-between;
 }
 
@@ -195,31 +207,32 @@ p {
 
 .Input1 p,
 .Input2 p {
-  font-size: 16px;
-  margin-bottom: 5px;
-  margin-top: 15px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 .Input1 input,
 .Input2 input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border-radius: 5px;
   border: 1px solid #444;
   background-color: white;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 .Buttons {
-  margin-top: 30px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 40px;
   justify-content: flex-end;
 }
 
 .Button1 button {
-  padding: 10px 30px;
+  padding: 12px 40px;
   background-color: #FF0000;
   color: white;
   border: none;
@@ -230,7 +243,7 @@ p {
 }
 
 .Button2 button {
-  padding: 10px 30px;
+  padding: 12px 40px;
   background-color: #444;
   color: white;
   border: none;
@@ -240,7 +253,20 @@ p {
   cursor: pointer;
 }
 
-/* Media queries */
+@media (max-width: 992px) {
+  .Teamssection {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+  }
+  
+  .Teamssection_Verequipos,
+  .Teamssection_Registrarequipos {
+      width: 90%;
+      max-width: 500px;
+  }
+}
+
 @media (max-width: 768px) {
   .Principal-Container_Upperpart_textscontainer {
       gap: 30px;
@@ -252,16 +278,6 @@ p {
   .Principal-Container_Upperpart_text3,
   .Principal-Container_Upperpart_text4 {
       font-size: 14px;
-  }
-
-  .Teamssection {
-      flex-direction: column;
-      gap: 20px;
-  }
-
-  .Teamssection_Verequipos,
-  .Teamssection_Registrarequipos {
-      width: 100%;
   }
 
   .Inputs {
@@ -295,4 +311,3 @@ p {
       width: 80px;
   }
 }
-</style>

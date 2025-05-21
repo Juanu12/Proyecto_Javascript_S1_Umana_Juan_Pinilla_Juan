@@ -16,6 +16,8 @@ try{
 
 async function Showdata() {
 
-    document.getElementById("").addEventListener("click")
-    
+   photo = document.getElementById("Pilotjs")
+  data = Getdata()
+  
+  photo.im
 }
