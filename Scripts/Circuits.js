@@ -41,8 +41,16 @@ async function Fetchdata(){
         
                 <div class="Circuitscontainer_elements">
                     <img src="${info.imagen} alt="${info.imagen} ">
-                    <p>dshfgkljdfglhkdfhkd</p>
-                
+                    <p> Nombre : ${info.nombre}</p>
+                    <p> País: ${info.pais}</p>
+                    <p>Lonitud(Km): ${info.longitud_km}</p>
+                    <p> Vueltas: ${info.vueltas}</p>
+                    <p> Descripción: ${info.descripcion}</p>
+                    <p> Tiempo record: ${info.record.tiempo}</p>
+                    <p>  Año: ${info.record.año}</p>
+                    <p> ${info.record.Piloto || ""}  </p>
+                    <p> Clima: ${info.record.clima.estado}</p>
+
                 </div>
                 
         

@@ -267,6 +267,12 @@ width: 30vw;
 height: 10vw;
 }
 
+
+.Info{
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 992px) {
   .Teamssection {
       flex-direction: column;
