@@ -19,7 +19,6 @@ try{
 
 async function Showdata() {
 
-   photo = document.getElementById("Pilotjs")
   data = await Getdata()
   let line ="";
 
@@ -28,22 +27,25 @@ async function Showdata() {
 
 
     
-line += `     <div class="PilotsChart">
-<div class="generalcontainer">
-  <div class="Pilot">
-    <img src="${piloto.imagenpiloto}" alt=${piloto.imagenpiloto} >
-    <div class="Pilotinfo">
-      <div class="pilotonum"> <img src=${piloto.numeropiloto } alt = ${piloto.numeropiloto}</div>
-      <div class="pilotocar"> <img src=${piloto.imagen } alt= ${piloto.imagen}</div>
-
-      <div class="pilotonombre">${piloto.nombre  }</div>
-      <div class="pilotopais">${piloto.pais }</div>
-      <div class="pilotoequipo">${piloto.equipo  }</div>
-      <div class="pilotorol">${piloto.rol }</div>
-    </div>
-  </div>
-</div>
-</div>
+line += `      <div class="PilotsChart">
+        <div class="generalcontainer">
+          <div class="Pilot">
+            <img src="${piloto.imagenpiloto}" alt="Imagen de ${piloto.nombre}">
+            <div class="Pilotinfo">
+              <div class="pilotonum">
+                <img src="${piloto.numeropiloto}" alt="Número de ${piloto.nombre}">
+              </div>
+              <div class="pilotocar">
+                <img src="${piloto.imagen}" alt="Auto de ${piloto.nombre}">
+              </div>
+              <div class="pilotonombre">${piloto.nombre}</div>
+              <div class="pilotopais">${piloto.pais}</div>
+              <div class="pilotoequipo">${piloto.equipo}</div>
+              <div class="pilotorol">${piloto.rol}</div>
+            </div>
+          </div>
+        </div>
+      </div>
 `
 
   }

@@ -113,6 +113,7 @@ p {
   flex-direction: row;
   align-items: center;
   width: 100%;
+  justify-content: center;
 }
 
 .Pilot img {
@@ -123,20 +124,66 @@ p {
 }
 
 .Pilotinfo {
-  display: flex;
-  flex-direction: column;
+  
   padding-left: 30px;
   gap: 40px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
+.Pilotnum{
+  width: 100%;
+}
 
 .pilotonum img{
   align-items: end;
   justify-content: end;
-  width: 10vw;
+  width: 40vw;
+  height: 10vh;
 
 }
+
+.pilotocar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pilotonum img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.pilotocar img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.Pilotinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  gap: 10px;
+  font-size: 22px;
+  color: white;
+}
+
+.pilotonombre,
+.pilotopais,
+.pilotoequipo,
+.pilotorol {
+  margin: 3px 0;
+  text-align: left;
+  font-weight: 500;
+  margin-left:40vh ;
+}
+
 
 @media (max-width: 768px) {
   .Pilot {
