@@ -194,9 +194,9 @@
 
 
     .Letters{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+      display: grid;
+grid-template-columns: repeat(2 , 1fr);
+     gap: 20px;
       font-size: 40px;
       padding-top: 20px;
       padding-left: 60px;
@@ -204,7 +204,16 @@
 
     }
 
+    .Letters button{
+width: 40%;
+margin-bottom: 10px;
+border-radius: 10px;
+height: 80%;
+background-color: #FF0000;
+border: 1px solid white;
+    }
+
     #Carimg{
       padding-top: 20px;
-      height: 30vh;
+      height: 20vh;
     }

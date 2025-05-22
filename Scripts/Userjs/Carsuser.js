@@ -45,7 +45,6 @@ async function Showdata() {
     <p>${auto.consumo_neumaticos}</p>
     <p>${auto.motor}</p>
     <p>${auto.color}</p>
-      <button>Eliminar</button>
     </div>
     </div>
 </div>
