@@ -35,10 +35,9 @@ document.getElementById("Send").addEventListener("click", async function (e) {
                 logo: Urllogo,
                 pais: Pais,
                 auto: Auto,
-                pilotos: [
-                        { nombre: Piloto1 },
-                        { nombre: Piloto2 }
-                ]
+                piloto1: Piloto1 ,
+                piloto2: Piloto2 
+                
 
         }
 
@@ -84,16 +83,16 @@ document.getElementById("Send").addEventListener("click", async function (e) {
 }
 
 )
-async function button (){
-window.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("Cancel").addEventListener("click", async function (e) {
-                e.preventDefault()
-
-                document.getElementById("Value1").value = "";
-                document.getElementById("Value2").value = "";
-                document.getElementById("Value3").value = "";
-                document.getElementById("Value4").value = "";
-                document.getElementById("Value5").value = "";
-                document.getElementById("Value6").value = "";
-        })
-})};
+function limpiarCampos() {
+        document.getElementById("Value1").value = "";
+        document.getElementById("Value2").value = "";
+        document.getElementById("Value3").value = "";
+        document.getElementById("Value4").value = "";
+        document.getElementById("Value5").value = "";
+        document.getElementById("Value6").value = "";
+    }
+    
+    document.getElementById("Cancel").addEventListener("click", function (e) {
+        e.preventDefault();
+        limpiarCampos();  
+    });

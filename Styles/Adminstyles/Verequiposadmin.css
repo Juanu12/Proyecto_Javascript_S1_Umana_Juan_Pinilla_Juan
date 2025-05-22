@@ -254,6 +254,44 @@ padding-left: 20px;
   font-weight: bold;
   cursor: pointer;
 }
+#PrincipalContainer{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+}
+
+
+.Chartelementscontainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+border-top: 1px solid red;
+
+}
+
+.Letters1,
+.Letters2,
+.Letters3{
+  padding-top: 40px;
+  font-size: 30px;
+}
+.Chartelementscontainer img{
+  height: 7vw;
+
+}
+
+.Letters3 button{
+  height: 1.7vw;
+  width: 10vw;
+  font-size: 40px;
+  background-color: red;
+  border:1px solid white;
+
+}
+.Letters3 {
+ padding-bottom: 1vw;
+
+}
 
 @media (max-width: 992px) {
   .Teamssection {

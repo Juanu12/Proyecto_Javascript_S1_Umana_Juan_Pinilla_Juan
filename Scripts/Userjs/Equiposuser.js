@@ -42,7 +42,6 @@ async function obtaininfo() {
             <div class="Letters3">
                 <p>Piloto2 ${equipos.piloto2}</p>
                 <p>Nacionalidad ${equipos.nacionalidad2}</p>
-                <button>eliminar</button>
             </div>
         </div>`
         }
