@@ -88,3 +88,14 @@ h2{
 
     
 }
+
+.Img img{
+    position: fixed;
+    width: 5vw;
+    height: 10vh;
+    margin-top: 26vw;
+    margin-left: 39vw;
+    animation: Logo 1s ease-out forwards;
+
+
+}

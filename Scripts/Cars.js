@@ -28,7 +28,7 @@ try{
 
 async function Showdata() {
 
-  data = await Fetchdata()
+  let data = await Fetchdata()
   let info = ""
 
   for(i=0; i<data.length; i++){
@@ -45,7 +45,7 @@ async function Showdata() {
     <p>${auto.consumo_neumaticos}</p>
     <p>${auto.motor}</p>
     <p>${auto.color}</p>
-      <button>Eliminar</button>
+      <button class="delete-btn" data-id="${auto.id}">Eliminar</button>
     </div>
     </div>
 </div>
@@ -54,6 +54,29 @@ async function Showdata() {
 
   }
   autos.innerHTML = info
+  document.querySelectorAll(".delete-btn").forEach(button => {
+    button.addEventListener("click", async (e) => {
+      const id = e.target.getAttribute("data-id");
+      await deldata(id);
+      Showdata();  
+    });
+});
 }
 
+  async function deldata(id) {
+    try {
+      const response = await fetch(`https://6813e31f225ff1af16276aea.mockapi.io/api/v1/students/Autos/${id}`, {
+        method: "DELETE"
+      });
+  
+      if (!response.ok) {
+        throw new Error(`Error al eliminar: ${response.status}`);
+      }
+  
+      alert(`Auto con ID ${id} eliminado correctamente`);
+    } catch (error) {
+      alert("Error eliminando el auto:", error);
+    }
+  }
 Showdata()
+
