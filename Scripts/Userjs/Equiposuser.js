@@ -46,5 +46,7 @@ async function obtaininfo() {
         </div>`
         }
         Teams.innerHTML = info
+
+        
 }
 obtaininfo()
