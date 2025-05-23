@@ -109,17 +109,16 @@ p {
 .Teamssection_Registrarequipos {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 600px;
   border: 1px solid red;
   border-radius: 30px;
   overflow: hidden;
   background-color: #121212;
-  height: 380px;
 }
 
 .Teamssection_Verequipos--Title,
 .Teamssection_Registrarequipos--Title2 {
-  font-size: 44px;
+  font-size: 24px;
   background-color: #212529;
   width: 100%;
   padding: 15px 20px;
@@ -136,27 +135,26 @@ p {
 
 .Teamssection_Verequipos--Title_Down-text,
 .Teamssection_Registrarequipos--Title2_Down-text {
-  font-size: 46px;
+  font-size: 16px;
   padding: 15px 20px;
   text-align: center;
 }
 
 .Teamssection_Verequipos_btn,
 .Teamssection_Registrarequipos_btn {
-  margin: 100px auto 20px auto;
+  margin: 10px auto 20px auto;
   text-align: center;
 }
 
 .Teamssection_Verequipos_btn a,
 .Teamssection_Registrarequipos_btn a {
-  
   display: inline-block;
   padding: 10px 20px;
   background-color: #FF0000;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   width: 180px;
@@ -254,43 +252,25 @@ padding-left: 20px;
   font-weight: bold;
   cursor: pointer;
 }
-#PrincipalContainer{
-  display: flex;
-  flex-direction: column;
-  height: auto;
-
-}
 
 
-.Chartelementscontainer{
+
+#Circuitsjs{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-border-top: 1px solid red;
-
+  grid-template-columns: repeat(2, 1fr);
+}
+.Circuitscontainer_elements{
+  display: grid;
+}
+.Circuitscontainer_elements img{
+width: 30vw;
+height: 10vw;
 }
 
-.Letters1,
-.Letters2,
-.Letters3{
-  padding-top: 40px;
-  font-size: 30px;
-}
-.Chartelementscontainer img{
-  height: 7vw;
 
-}
-
-.Letters3 button{
-  height: 2.3vw;
-  width: 10vw;
-  font-size: 40px;
-  background-color: red;
-  border:1px solid white;
-
-}
-.Letters3 {
- padding-bottom: 1vw;
-
+.Info{
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 992px) {
