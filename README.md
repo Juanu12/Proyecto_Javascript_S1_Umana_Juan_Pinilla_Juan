@@ -6,12 +6,12 @@
 | 1 | [Fonts](Fonts) |
 | 2 | [Scripts](Scripts) |
 | 3 | [Storage](Storage) |
-| 4 | [Styles](Stles) |
-| 5 | [Userhtml](Userhtml) |
-| 6 | [adminHtml](Dia6) |
-| 7 | [Loguin](Loguin) |
-| 8 | [User](User)|
-| 9 | [index](index)|
+| 4 | [Styles](https://github.com/Juanu12/Proyecto_Javascript_S1_Umana_Juan_Pinilla_Juan/tree/master/Styles) |
+| 5 | [Userhtml]([Userhtml](https://github.com/Juanu12/Proyecto_Javascript_S1_Umana_Juan_Pinilla_Juan/tree/master/Userhtml)) |
+| 6 | [adminHtml](https://github.com/Juanu12/Proyecto_Javascript_S1_Umana_Juan_Pinilla_Juan/tree/master/adminHtml) |
+| 7 | [Loguin]((https://github.com/Juanu12/Proyecto_Javascript_S1_Umana_Juan_Pinilla_Juan/blob/master/Loguin.html)) |
+| 8 | [User](https://github.com/Juanu12/Proyecto_Javascript_S1_Umana_Juan_Pinilla_Juan/blob/master/User.html))|
+| 9 | [index]((https://github.com/Juanu12/Proyecto_Javascript_S1_Umana_Juan_Pinilla_Juan/blob/master/index.html))|
 
 
 
