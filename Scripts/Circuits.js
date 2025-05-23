@@ -49,6 +49,7 @@ async function Fetchdata(){
                     <p>  Año: ${info.record.año}</p>
                     <p> ${info.record.Piloto || ""}  </p>
                     <p> Clima: ${info.record.clima.estado}</p>
+                    <button> Eliminar <button>
 
                 </div>
                 
