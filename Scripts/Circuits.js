@@ -49,7 +49,7 @@ async function Fetchdata(){
                     <p>  Año: ${info.record.año}</p>
                     <p> ${info.record.Piloto || ""}  </p>
                     <p> Clima: ${info.record.clima.estado}</p>
-                    <button> Eliminar <button>
+                    <button class="deletebtn" dataid= ${info.id}> Eliminar </button>
 
                 </div>
                 
@@ -59,6 +59,31 @@ async function Fetchdata(){
             }
 
             circuits.innerHTML = content
+            document.querySelectorAll(".deletebtn").forEach(button => {
+                button.addEventListener("click", async (e) => {
+                    const id = e.target.getAttribute("dataid")
+                     await delinfo(id)
+                     Showdata()
+
+
+                })
+            });
     }
 
+    async function delinfo(id) {
+        try{
+            const response = await fetch(`https://6813e31f225ff1af16276aea.mockapi.io/api/v1/students/Circuits/${id}`, 
+                {
+                    method: "DELETE"
+                }
+            )
+       if(!response.ok){
+        throw new Error (`Ocurrio un error, ${response.status}`)
+       }
+       alert(`El Circuito con id ${id} fue eliminado con exito`)
+        } catch (error){
+            alert("Ocurrio un error",error)
+
+        }
+    }
     Showdata()
